@@ -2,7 +2,6 @@
 // Created by matthieu on 11/10/24.
 //
 
-#include "q1.h"
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -66,7 +65,7 @@ void longest_increasing_subsequence(vector<int>& A) {
     }
 
 
-    ofstream output_file("../OUTMONOSEQ.txt");
+    ofstream output_file("OUTMONOSEQ.txt");
     if (!output_file) {
         cerr << "Erreur lors de l'ouverture du fichier !" << endl;
         return;
@@ -95,7 +94,7 @@ void generaate_random_inpput_seq(const int N)
         values[i] = distrib(gen);
     }
 
-    ofstream output_file("../INPMONOSEQ.txt");
+    ofstream output_file("INPMONOSEQ.txt");
     if (!output_file) {
         cerr << "Error opening output file!" << endl;
         throw;
